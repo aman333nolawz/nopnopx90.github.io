@@ -1,0 +1,38 @@
+title: NopNop0x90's Blog
+description: Security research and CTF writeups
+url: https://nopnopx90.github.io
+baseurl: ""
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+paginate: 7
+paginate_path: "/page/:num/"
+
+collections:
+  posts:
+    output: true
+    permalink: /writeups/:title/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "NopNop0x90"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+ # - jekyll-paginate-v2  
+  - jekyll-paginate    
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
