@@ -637,10 +637,15 @@ code {
   font-family: "Fira Code", monospace;
 }
 
+.code-block-wrapper {
+  position: relative;
+  margin: 1.5rem 0;
+}
+
 .copy-btn {
   position: absolute;
   top: 8px;
-  right: 8px;
+  right: 1rem;
   background: var(--bg-tertiary);
   color: var(--text-primary);
   border: none;
@@ -652,6 +657,7 @@ code {
   display: flex;
   align-items: center;
   gap: 0.3rem;
+  z-index: 10;
 }
 
 .copy-btn:hover {
@@ -1089,14 +1095,6 @@ footer::before {
     margin-right: 0.5rem;
     gap: 0.5rem;
   }
-
-  .copy-btn {
-    top: 6px;
-    right: 6px;
-    padding: 0.25rem 0.5rem;
-    font-size: 0.75rem;
-    gap: 0.25rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -1137,28 +1135,7 @@ footer::before {
   }
 
   .highlight {
-    width: 80vw;
-  }
-
-  .copy-btn {
-    top: 6px;
-    right: 6px;
-    padding: 0.25rem 0.5rem;
-    font-size: 0.75rem;
-    gap: 0.25rem;
-    min-width: 44px;
-    min-height: 44px;
-    justify-content: center;
-  }
-
-  pre {
-    font-size: 0.9rem;
-    padding: 1rem;
-    padding-top: 2.2rem;
-    padding-right: 1.2rem;
-    margin: 1rem -10px;
-    width: calc(100% + 20px);
-    border-radius: 0;
+    max-width: 85vw;
   }
 
   .read-more {
