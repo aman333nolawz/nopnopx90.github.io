@@ -26,7 +26,7 @@ permalink: /
             {% else %}{{ post.excerpt | strip_html | truncate: 150 }}
             {% endif %}
           </p>
-          <a href="{{ post.url }}" class="read-more primary-btn">Read More →</a>
+          <a href="{{ post.url }}" class="read-more primary-btn">Read More</a>
         </div>
       </div>
     {% endfor %}
